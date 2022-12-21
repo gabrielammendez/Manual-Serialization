@@ -1,73 +1,23 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
-  "ControlUniqueIds": {
-    "App": 1,
-    "Background Dim": 5,
-    "Completed Button": 7,
-    "Completed Serial Cards": 3,
-    "Create Button": 6,
-    "galleryTemplate1": 10,
-    "Home Screen": 4,
-    "Serial Card Request Screen": 8,
-    "Tab Buttons": 9
-  },
+  "ControlUniqueIds": {},
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/21/2022 14:49:55",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {
-    "f9a0fc89-e3d1-4412-b890-0787dba129e0": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/aec37ddcc97e4537aa5723c1362a8fdd\""
-  },
+  "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
-  "LocalResourceFileNames": {
-    "warehouse-worker-checking-orders-at-computer": "c6b8e285-18db-49b8-b9a4-f07f79ae6fcb.jpg"
-  },
-  "LocalResourceRootPaths": {
-    "warehouse-worker-checking-orders-at-computer": "https://docserverpwaprodwus.blob.core.windows.net/b29f690c-9992-46cb-bfe0-a6bf837b3937-1/resource/Assets0Images0c6b8e285-18db-49b8-b9a4-f07f79ae6fcb.jpg?sv=2017-04-17&sr=b&sig=h7KNl7BAnCQI76tteD7TmdLpwXK1jrVa9X0YYZ2RI5M%3D&spr=https&se=2022-12-22T15%3A03%3A06Z&sp=r"
-  },
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {
-    "CustomGallerySample": 1,
-    "Form Response Collection": 0
-  },
+  "OrderDataSource": {},
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {
-    "button": 1,
-    "gallery": 2,
-    "rectangle": 0
-  },
-  "PublishOrderIndices": {
-    "App": 0,
-    "Background Dim": 0,
-    "Completed Button": 2,
-    "Completed Serial Cards": 0,
-    "Create Button": 1,
-    "galleryTemplate1": 4,
-    "Home Screen": 0,
-    "Serial Card Request Screen": 0,
-    "Tab Buttons": 3
-  },
-  "ResourcesJsonIndices": {
-    "Image-SampleImage": 1,
-    "Image-warehouse-worker-checking-orders-at-computer": 0
-  },
+  "OrderXMLTemplate": {},
+  "PublishOrderIndices": {},
+  "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {},
-  "VolatileProperties": {
-    "AnalysisLoadTime": 0.1322244,
-    "ControlCount": {
-      "button": 2,
-      "gallery": 1,
-      "galleryTemplate": 1,
-      "rectangle": 1,
-      "screen": 3
-    },
-    "DeserializationLoadTime": 2.6034314,
-    "ErrorCount": 0
-  },
-  "WasLocalDatabaseReferencesEmpty": true
+  "TemplateVersions": {}
 }
