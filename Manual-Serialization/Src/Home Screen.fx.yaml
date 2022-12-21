@@ -1,0 +1,30 @@
+"'Home Screen' As screen":
+    BackgroundImage: ='warehouse-worker-checking-orders-at-computer'
+    ImagePosition: =ImagePosition.Fill
+
+    "'Background Dim' As rectangle":
+        Fill: =RGBA(0, 0, 0, 0.4)
+        Height: =768
+        Width: =1366
+        ZIndex: =1
+
+    "'Create Button' As button":
+        Fill: =RGBA(0, 66, 141, 1)
+        Height: =48
+        OnSelect: =Navigate('Serial Card Request Screen')
+        Text: ="Create New Serial Record"
+        Width: =278
+        X: =112
+        Y: =260
+        ZIndex: =2
+
+    "'Completed Button' As button":
+        Fill: =RGBA(0, 75, 141, 1)
+        Height: =48
+        OnSelect: =Navigate('Completed Serial Cards')
+        Text: ="View Completed Records"
+        Width: =278
+        X: =112
+        Y: =360
+        ZIndex: =3
+

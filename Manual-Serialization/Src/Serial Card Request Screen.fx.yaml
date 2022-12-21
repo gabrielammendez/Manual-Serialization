@@ -1,0 +1,11 @@
+"'Serial Card Request Screen' As screen":
+
+    "'Tab Buttons' As gallery.galleryHorizontal":
+        Height: =91
+        Items: =CustomGallerySample
+        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(320, Self.Width - 60), Min(320, Self.Height - 60))
+        Width: =1218
+        X: =68
+        Y: =188
+        ZIndex: =1
+

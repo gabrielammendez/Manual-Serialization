@@ -1,0 +1,30 @@
+{
+  "f9a0fc89-e3d1-4412-b890-0787dba129e0": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/juanq/gateway/greyhound/3000.150.11/1.0.1613.3116/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://emerson.sharepoint.com/sites/ManualSerialization": {
+        "dataSources": {
+          "Form Response Collection": {
+            "tableName": "bf142006-086b-4c44-9bcd-946c86f25c94"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Form Response Collection"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "f9a0fc89-e3d1-4412-b890-0787dba129e0"
+  }
+}
