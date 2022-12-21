@@ -9,6 +9,7 @@
         ZIndex: =1
 
     "'Create Button' As button":
+        Color: =RGBA(246, 88, 16, 1)
         Fill: =RGBA(0, 66, 141, 1)
         Height: =48
         OnSelect: =Navigate('Serial Card Request Screen')
