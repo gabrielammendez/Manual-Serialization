@@ -4,7 +4,6 @@
   "ControlUniqueIds": {
     "App": 1,
     "Background Dim": 5,
-    "ComboBox2": 20,
     "Completed Button": 7,
     "Completed Serial Cards": 3,
     "Create Button": 6,
@@ -18,7 +17,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/22/2022 21:11:25",
+  "HeaderLastSavedDateTimeUTC": "12/22/2022 21:11:40",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "f9a0fc89-e3d1-4412-b890-0787dba129e0": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/0240807ad7384b57a65a3fb4763252ea\""
@@ -35,7 +34,6 @@
   "OrderDataSource": {
     "ComboBoxSample": 2,
     "CustomGallerySample": 0,
-    "First Piece Data": 3,
     "Form Response Collection": 1
   },
   "OrderGroupControls": {},
@@ -43,16 +41,14 @@
   "OrderTemplate": {},
   "OrderXMLTemplate": {
     "button": 1,
-    "combobox": 3,
     "gallery": 2,
     "rectangle": 0,
-    "text": 5,
-    "toggleSwitch": 4
+    "text": 4,
+    "toggleSwitch": 3
   },
   "PublishOrderIndices": {
     "App": 0,
     "Background Dim": 0,
-    "ComboBox2": 5,
     "Completed Button": 2,
     "Completed Serial Cards": 2,
     "Create Button": 1,
@@ -80,7 +76,7 @@
       "screen": 3
     },
     "DeserializationLoadTime": 2.9408018,
-    "ErrorCount": 1
+    "ErrorCount": 0
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

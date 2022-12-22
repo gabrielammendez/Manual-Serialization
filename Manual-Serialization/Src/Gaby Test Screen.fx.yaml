@@ -12,13 +12,3 @@
         Y: =196
         ZIndex: =3
 
-    ComboBox2 As combobox:
-        DisplayFields: =["RPPNo_x002e_"]
-        Items: ='First Piece Data'
-        SearchFields: =["RPPNo_x002e_"]
-        SearchItems: =Search('First Piece Data',ComboBox2.SearchText,"RPPNo_x002e_")
-        Width: =220
-        X: =50
-        Y: =104
-        ZIndex: =4
-
