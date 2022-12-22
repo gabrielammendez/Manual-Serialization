@@ -1,23 +1,86 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
-  "ControlUniqueIds": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "Background Dim": 5,
+    "ComboBox2": 20,
+    "Completed Button": 7,
+    "Completed Serial Cards": 3,
+    "Create Button": 6,
+    "Gaby Test Screen": 11,
+    "galleryTemplate1": 10,
+    "Home Screen": 4,
+    "Serial Card Request Screen": 8,
+    "Tab Buttons": 9,
+    "TextInput2": 16,
+    "Toggle1": 12
+  },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "12/22/2022 21:11:25",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {},
+  "LocalConnectionIDReferences": {
+    "f9a0fc89-e3d1-4412-b890-0787dba129e0": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/0240807ad7384b57a65a3fb4763252ea\""
+  },
   "LocalDatabaseReferencesAsEmpty": false,
-  "LocalResourceFileNames": {},
-  "LocalResourceRootPaths": {},
+  "LocalResourceFileNames": {
+    "warehouse-worker-checking-orders-at-computer": "0001.jpg"
+  },
+  "LocalResourceRootPaths": {
+    "warehouse-worker-checking-orders-at-computer": "https://docserverpwaprodwus.blob.core.windows.net/86e969b6-24f6-47a4-85b1-b9ede07c7d6f-1/resource/Assets0Images00001.jpg?sv=2017-04-17&sr=b&sig=Ari1qUiaKJRACpJEvE1FsVGqiGVsTnmpaFemlesPqAg%3D&spr=https&se=2022-12-23T20%3A56%3A34Z&sp=r"
+  },
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {},
+  "OrderDataSource": {
+    "ComboBoxSample": 2,
+    "CustomGallerySample": 0,
+    "First Piece Data": 3,
+    "Form Response Collection": 1
+  },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {},
-  "PublishOrderIndices": {},
-  "ResourcesJsonIndices": {},
+  "OrderXMLTemplate": {
+    "button": 1,
+    "combobox": 3,
+    "gallery": 2,
+    "rectangle": 0,
+    "text": 5,
+    "toggleSwitch": 4
+  },
+  "PublishOrderIndices": {
+    "App": 0,
+    "Background Dim": 0,
+    "ComboBox2": 5,
+    "Completed Button": 2,
+    "Completed Serial Cards": 2,
+    "Create Button": 1,
+    "Gaby Test Screen": 0,
+    "galleryTemplate1": 4,
+    "Home Screen": 3,
+    "Serial Card Request Screen": 7,
+    "Tab Buttons": 3,
+    "TextInput2": 7,
+    "Toggle1": 6
+  },
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0,
+    "Image-warehouse-worker-checking-orders-at-computer": 1
+  },
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {}
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.1234187,
+    "ControlCount": {
+      "button": 2,
+      "gallery": 1,
+      "galleryTemplate": 1,
+      "rectangle": 1,
+      "screen": 3
+    },
+    "DeserializationLoadTime": 2.9408018,
+    "ErrorCount": 1
+  },
+  "WasLocalDatabaseReferencesEmpty": true
 }

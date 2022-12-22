@@ -18,10 +18,18 @@
             "tableName": "bf142006-086b-4c44-9bcd-946c86f25c94"
           }
         }
+      },
+      "https://emerson.sharepoint.com/sites/RPPPlantEngineering": {
+        "dataSources": {
+          "First Piece Data": {
+            "tableName": "e684b050-01cb-4c09-b7dd-355cb89154b9"
+          }
+        }
       }
     },
     "dataSources": [
-      "Form Response Collection"
+      "Form Response Collection",
+      "First Piece Data"
     ],
     "dependencies": {},
     "dependents": [],

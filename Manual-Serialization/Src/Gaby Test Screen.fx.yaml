@@ -1,0 +1,24 @@
+"'Gaby Test Screen' As screen":
+
+    Toggle1 As toggleSwitch:
+        X: =300
+        Y: =116
+        ZIndex: =1
+
+    TextInput2 As text:
+        Default: =
+        Visible: =If(Toggle1.Value = true, false, true )
+        X: =312
+        Y: =196
+        ZIndex: =3
+
+    ComboBox2 As combobox:
+        DisplayFields: =["RPPNo_x002e_"]
+        Items: ='First Piece Data'
+        SearchFields: =["RPPNo_x002e_"]
+        SearchItems: =Search('First Piece Data',ComboBox2.SearchText,"RPPNo_x002e_")
+        Width: =220
+        X: =50
+        Y: =104
+        ZIndex: =4
+
