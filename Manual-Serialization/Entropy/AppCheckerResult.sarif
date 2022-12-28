@@ -14,6 +14,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'User Name_DataCard1'.DataCardValue3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'User Name_DataCard1'.DataCardValue3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Serial Card Request Screen",
+                "type": "'Serial Card Request Screen'.Form1.'User Name_DataCard1'.DataCardValue3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Serial Card Request Screen'.Form1.Email_DataCard1.DataCardValue1.AccessibleLabel"
                 }
               ],
@@ -57,36 +87,6 @@
                 "member": "AccessibleLabel",
                 "module": "Serial Card Request Screen",
                 "type": "'Serial Card Request Screen'.Form1.'Name (field_4)_DataCard1'.DataCardValue2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'User Name_DataCard1'.DataCardValue3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'User Name_DataCard1'.DataCardValue3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'User Name_DataCard1'.DataCardValue3"
               }
             }
           ],
@@ -464,19 +464,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (B) Y/N_DataCard1'.Dropdown1.AccessibleLabel"
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (B) Y/N_DataCard1'.ComboBox1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (B) Y/N_DataCard1'.Dropdown1.AccessibleLabel",
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (B) Y/N_DataCard1'.ComboBox1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Product (B) Y/N_DataCard1'.Dropdown1"
+                "type": "'Serial Card Request Screen'.Form1.'Product (B) Y/N_DataCard1'.ComboBox1"
               }
             }
           ],
@@ -824,36 +824,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (F) Y/N_DataCard1'.DataCardValue27.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (F) Y/N_DataCard1'.DataCardValue27.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Product (F) Y/N_DataCard1'.DataCardValue27"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product # (F)_DataCard1'.DataCardValue28.AccessibleLabel"
                 }
               ],
@@ -914,19 +884,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (G) Y/N_DataCard1'.DataCardValue30.AccessibleLabel"
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (F) Y/N_DataCard1'.DataCardValue27.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (G) Y/N_DataCard1'.DataCardValue30.AccessibleLabel",
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (F) Y/N_DataCard1'.DataCardValue27.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Product (G) Y/N_DataCard1'.DataCardValue30"
+                "type": "'Serial Card Request Screen'.Form1.'Product (F) Y/N_DataCard1'.DataCardValue27"
               }
             }
           ],
@@ -1004,19 +974,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (H) Y/N_DataCard1'.DataCardValue33.AccessibleLabel"
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (G) Y/N_DataCard1'.DataCardValue30.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (H) Y/N_DataCard1'.DataCardValue33.AccessibleLabel",
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (G) Y/N_DataCard1'.DataCardValue30.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Product (H) Y/N_DataCard1'.DataCardValue33"
+                "type": "'Serial Card Request Screen'.Form1.'Product (G) Y/N_DataCard1'.DataCardValue30"
               }
             }
           ],
@@ -1094,19 +1064,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (I) Y/N_DataCard1'.DataCardValue36.AccessibleLabel"
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (H) Y/N_DataCard1'.DataCardValue33.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (I) Y/N_DataCard1'.DataCardValue36.AccessibleLabel",
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (H) Y/N_DataCard1'.DataCardValue33.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Product (I) Y/N_DataCard1'.DataCardValue36"
+                "type": "'Serial Card Request Screen'.Form1.'Product (H) Y/N_DataCard1'.DataCardValue33"
               }
             }
           ],
@@ -1184,36 +1154,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (J) Y/N_DataCard1'.DataCardValue39.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (J) Y/N_DataCard1'.DataCardValue39.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Product (J) Y/N_DataCard1'.DataCardValue39"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product # (J)_DataCard1'.DataCardValue40.AccessibleLabel"
                 }
               ],
@@ -1274,19 +1214,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please add configured Item Number_DataCard1'.DataCardValue42.AccessibleLabel"
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (I) Y/N_DataCard1'.DataCardValue36.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please add configured Item Number_DataCard1'.DataCardValue42.AccessibleLabel",
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (I) Y/N_DataCard1'.DataCardValue36.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Please add configured Item Number_DataCard1'.DataCardValue42"
+                "type": "'Serial Card Request Screen'.Form1.'Product (I) Y/N_DataCard1'.DataCardValue36"
               }
             }
           ],
@@ -1364,19 +1304,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'End Serial #_DataCard1'.DataCardValue45.AccessibleLabel"
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (J) Y/N_DataCard1'.DataCardValue39.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'End Serial #_DataCard1'.DataCardValue45.AccessibleLabel",
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (J) Y/N_DataCard1'.DataCardValue39.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'End Serial #_DataCard1'.DataCardValue45"
+                "type": "'Serial Card Request Screen'.Form1.'Product (J) Y/N_DataCard1'.DataCardValue39"
               }
             }
           ],
@@ -1454,19 +1394,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Order Qty_DataCard1'.DataCardValue48.AccessibleLabel"
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please add configured Item Number_DataCard1'.DataCardValue42.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Order Qty_DataCard1'.DataCardValue48.AccessibleLabel",
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please add configured Item Number_DataCard1'.DataCardValue42.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Order Qty_DataCard1'.DataCardValue48"
+                "type": "'Serial Card Request Screen'.Form1.'Please add configured Item Number_DataCard1'.DataCardValue42"
               }
             }
           ],
@@ -1514,19 +1454,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Order Date_DataCard1'.DataCardValue50.AccessibleLabel"
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Order Qty_DataCard1'.DataCardValue48.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Order Date_DataCard1'.DataCardValue50.AccessibleLabel",
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Order Qty_DataCard1'.DataCardValue48.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Order Date_DataCard1'.DataCardValue50"
+                "type": "'Serial Card Request Screen'.Form1.'Order Qty_DataCard1'.DataCardValue48"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'End Serial #_DataCard1'.DataCardValue45.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'End Serial #_DataCard1'.DataCardValue45.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Serial Card Request Screen",
+                "type": "'Serial Card Request Screen'.Form1.'End Serial #_DataCard1'.DataCardValue45"
               }
             }
           ],
@@ -1604,19 +1574,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please add the Tag Number_DataCard1'.DataCardValue56.AccessibleLabel"
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Order Date_DataCard1'.DataCardValue50.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please add the Tag Number_DataCard1'.DataCardValue56.AccessibleLabel",
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Order Date_DataCard1'.DataCardValue50.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Please add the Tag Number_DataCard1'.DataCardValue56"
+                "type": "'Serial Card Request Screen'.Form1.'Order Date_DataCard1'.DataCardValue50"
               }
             }
           ],
@@ -1694,19 +1664,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Select Note Type\u00A0(I)_DataCard1'.DataCardValue59.AccessibleLabel"
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please add the Tag Number_DataCard1'.DataCardValue56.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Select Note Type\u00A0(I)_DataCard1'.DataCardValue59.AccessibleLabel",
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please add the Tag Number_DataCard1'.DataCardValue56.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Please Select Note Type\u00A0(I)_DataCard1'.DataCardValue59"
+                "type": "'Serial Card Request Screen'.Form1.'Please add the Tag Number_DataCard1'.DataCardValue56"
               }
             }
           ],
@@ -1784,6 +1754,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Select Note Type\u00A0(I)_DataCard1'.DataCardValue59.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Select Note Type\u00A0(I)_DataCard1'.DataCardValue59.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Serial Card Request Screen",
+                "type": "'Serial Card Request Screen'.Form1.'Please Select Note Type\u00A0(I)_DataCard1'.DataCardValue59"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Select Note Type\u00A0(E)_DataCard1'.DataCardValue64.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Select Note Type\u00A0(E)_DataCard1'.DataCardValue64.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Serial Card Request Screen",
+                "type": "'Serial Card Request Screen'.Form1.'Please Select Note Type\u00A0(E)_DataCard1'.DataCardValue64"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Select Note Type\u00A0(B)_DataCard1'.DataCardValue62.AccessibleLabel"
                 }
               ],
@@ -1844,19 +1874,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Select Note Type\u00A0(E)_DataCard1'.DataCardValue64.AccessibleLabel"
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Select Note Type\u00A0(D)_DataCard1'.DataCardValue67.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Select Note Type\u00A0(E)_DataCard1'.DataCardValue64.AccessibleLabel",
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Select Note Type\u00A0(D)_DataCard1'.DataCardValue67.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Please Select Note Type\u00A0(E)_DataCard1'.DataCardValue64"
+                "type": "'Serial Card Request Screen'.Form1.'Please Select Note Type\u00A0(D)_DataCard1'.DataCardValue67"
               }
             }
           ],
@@ -1934,19 +1964,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Select Note Type\u00A0(D)_DataCard1'.DataCardValue67.AccessibleLabel"
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Enter Special Note Value\u00A0(D)_DataCard1'.DataCardValue70.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Select Note Type\u00A0(D)_DataCard1'.DataCardValue67.AccessibleLabel",
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Enter Special Note Value\u00A0(D)_DataCard1'.DataCardValue70.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Please Select Note Type\u00A0(D)_DataCard1'.DataCardValue67"
+                "type": "'Serial Card Request Screen'.Form1.'Please Enter Special Note Value\u00A0(D)_DataCard1'.DataCardValue70"
               }
             }
           ],
@@ -2024,66 +2054,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Enter Special Note Value\u00A0(D)_DataCard1'.DataCardValue70.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Enter Special Note Value\u00A0(D)_DataCard1'.DataCardValue70.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Please Enter Special Note Value\u00A0(D)_DataCard1'.DataCardValue70"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Enter Special Note Value\u00A0(E)_DataCard1'.DataCardValue71.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Enter Special Note Value\u00A0(E)_DataCard1'.DataCardValue71.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Please Enter Special Note Value\u00A0(E)_DataCard1'.DataCardValue71"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Enter Special Note Value\u00A0(F)_DataCard1'.DataCardValue72.AccessibleLabel"
                 }
               ],
@@ -2144,19 +2114,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Enter Special Note Value\u00A0(H)_DataCard1'.DataCardValue74.AccessibleLabel"
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Enter Special Note Value\u00A0(E)_DataCard1'.DataCardValue71.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Enter Special Note Value\u00A0(H)_DataCard1'.DataCardValue74.AccessibleLabel",
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Enter Special Note Value\u00A0(E)_DataCard1'.DataCardValue71.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Please Enter Special Note Value\u00A0(H)_DataCard1'.DataCardValue74"
+                "type": "'Serial Card Request Screen'.Form1.'Please Enter Special Note Value\u00A0(E)_DataCard1'.DataCardValue71"
               }
             }
           ],
@@ -2217,6 +2187,36 @@
                 "member": "AccessibleLabel",
                 "module": "Serial Card Request Screen",
                 "type": "'Serial Card Request Screen'.Form1.'Please Enter Special Note Value\u00A0(J)_DataCard1'.DataCardValue76"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Enter Special Note Value\u00A0(H)_DataCard1'.DataCardValue74.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please Enter Special Note Value\u00A0(H)_DataCard1'.DataCardValue74.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Serial Card Request Screen",
+                "type": "'Serial Card Request Screen'.Form1.'Please Enter Special Note Value\u00A0(H)_DataCard1'.DataCardValue74"
               }
             }
           ],
