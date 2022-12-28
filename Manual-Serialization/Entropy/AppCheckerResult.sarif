@@ -14,66 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Gaby Test Screen'.Toggle1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Gaby Test Screen'.Toggle1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Gaby Test Screen",
-                "type": "'Gaby Test Screen'.Toggle1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Gaby Test Screen'.TextInput2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Gaby Test Screen'.TextInput2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Gaby Test Screen",
-                "type": "'Gaby Test Screen'.TextInput2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Serial Card Request Screen'.Form1.Email_DataCard1.DataCardValue1.AccessibleLabel"
                 }
               ],
@@ -374,6 +314,96 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Ship To Customer Address the same as Current Location and Installed At?_DataCard1'.DataCardValue55.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Ship To Customer Address the same as Current Location and Installed At?_DataCard1'.DataCardValue55.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Serial Card Request Screen",
+                "type": "'Serial Card Request Screen'.Form1.'Ship To Customer Address the same as Current Location and Installed At?_DataCard1'.DataCardValue55"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please enter the Current Location Number_DataCard1'.DataCardValue53.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please enter the Current Location Number_DataCard1'.DataCardValue53.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Serial Card Request Screen",
+                "type": "'Serial Card Request Screen'.Form1.'Please enter the Current Location Number_DataCard1'.DataCardValue53"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please enter the Installed At Number_DataCard1'.DataCardValue54.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please enter the Installed At Number_DataCard1'.DataCardValue54.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Serial Card Request Screen",
+                "type": "'Serial Card Request Screen'.Form1.'Please enter the Installed At Number_DataCard1'.DataCardValue54"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product # (A)_DataCard1'.DataCardValue13.AccessibleLabel"
                 }
               ],
@@ -434,19 +464,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (B) Y/N_DataCard1'.DataCardValue15.AccessibleLabel"
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (B) Y/N_DataCard1'.Dropdown1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (B) Y/N_DataCard1'.DataCardValue15.AccessibleLabel",
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Product (B) Y/N_DataCard1'.Dropdown1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Product (B) Y/N_DataCard1'.DataCardValue15"
+                "type": "'Serial Card Request Screen'.Form1.'Product (B) Y/N_DataCard1'.Dropdown1"
               }
             }
           ],
@@ -1574,96 +1604,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please enter the Current Location Number_DataCard1'.DataCardValue53.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please enter the Current Location Number_DataCard1'.DataCardValue53.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Please enter the Current Location Number_DataCard1'.DataCardValue53"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please enter the Installed At Number_DataCard1'.DataCardValue54.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please enter the Installed At Number_DataCard1'.DataCardValue54.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Please enter the Installed At Number_DataCard1'.DataCardValue54"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Ship To Customer Address the same as Current Location and Installed At?_DataCard1'.DataCardValue55.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Ship To Customer Address the same as Current Location and Installed At?_DataCard1'.DataCardValue55.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Ship To Customer Address the same as Current Location and Installed At?_DataCard1'.DataCardValue55"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Please add the Tag Number_DataCard1'.DataCardValue56.AccessibleLabel"
                 }
               ],
@@ -2307,6 +2247,66 @@
                 "member": "AccessibleLabel",
                 "module": "Serial Card Request Screen",
                 "type": "'Serial Card Request Screen'.Form1.Attachments_DataCard1.DataCardValue77"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Gaby Test Screen'.Toggle1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Gaby Test Screen'.Toggle1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Gaby Test Screen",
+                "type": "'Gaby Test Screen'.Toggle1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Gaby Test Screen'.TextInput2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Gaby Test Screen'.TextInput2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Gaby Test Screen",
+                "type": "'Gaby Test Screen'.TextInput2"
               }
             }
           ],
