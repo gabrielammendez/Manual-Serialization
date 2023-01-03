@@ -1394,19 +1394,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Order Qty_DataCard1'.DataCardValue48.AccessibleLabel"
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Order Date_DataCard1'.DatePicker2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Order Qty_DataCard1'.DataCardValue48.AccessibleLabel",
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Order Date_DataCard1'.DatePicker2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Order Qty_DataCard1'.DataCardValue48"
+                "type": "'Serial Card Request Screen'.Form1.'Order Date_DataCard1'.DatePicker2"
               }
             }
           ],
@@ -1454,19 +1454,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Order Date_DataCard1'.DataCardValue50.AccessibleLabel"
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Order Qty_DataCard1'.DataCardValue48.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Order Date_DataCard1'.DataCardValue50.AccessibleLabel",
+                  "fullyQualifiedName": "'Serial Card Request Screen'.Form1.'Order Qty_DataCard1'.DataCardValue48.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Serial Card Request Screen",
-                "type": "'Serial Card Request Screen'.Form1.'Order Date_DataCard1'.DataCardValue50"
+                "type": "'Serial Card Request Screen'.Form1.'Order Qty_DataCard1'.DataCardValue48"
               }
             }
           ],
