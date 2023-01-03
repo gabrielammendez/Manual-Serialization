@@ -720,13 +720,15 @@
 
             DataCardValue55 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
+                DefaultSelectedItems: |-
+                    ={Value: "Yes"}
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
+                IsSearchable: =false
                 Items: =Choices([@'Form Response Collection'].field_57)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Form Response Collection'.field_57,DataCardValue55.SearchText)
+                SearchItems: =[]
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
