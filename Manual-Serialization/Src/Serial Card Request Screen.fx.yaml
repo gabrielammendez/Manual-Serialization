@@ -912,8 +912,8 @@
             Required: =false
             Update: =DataCardValue13.Text
             Width: =455
-            X: =2
-            Y: =4
+            X: =0
+            Y: =5
             ZIndex: =2
 
             DataCardKey15 As label:
@@ -3850,10 +3850,11 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_77")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =If(DataCardValue36.Selected.Value="No",false,true)
+            Height: =50
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_77")
             Required: =false
             Update: =DataCardValue75.Text
+            Visible: =If(DataCardValue36.Selected.Value="No",false,true)
             Width: =455
             X: =2
             Y: =21
