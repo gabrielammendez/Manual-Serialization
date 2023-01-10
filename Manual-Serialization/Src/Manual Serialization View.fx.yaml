@@ -43,7 +43,7 @@
         ZIndex: =5
 
         Tabs As button:
-            Fill: =RGBA(0, 75, 141, 1)
+            Fill: =If(varTabSelected = ThisItem.ID, RGBA(0, 75, 141, 1), Gray)
             Height: =42
             OnSelect: =Set(varTabSelected, ThisItem.ID)
             RadiusBottomLeft: =0
