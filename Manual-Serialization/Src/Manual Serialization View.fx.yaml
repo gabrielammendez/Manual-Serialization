@@ -1,4 +1,5 @@
 "'Manual Serialization View' As screen":
+    OnVisible: =Set(varTabSelected,1)
 
     Rectangle1_1 As rectangle:
         Fill: =RGBA(0, 75, 141, 1)
@@ -5500,7 +5501,7 @@
                 Y: =DataCardKey150.Y
                 ZIndex: =4
 
-    Icon3 As icon.Edit:
+    "'Edit Button' As icon.Edit":
         Color: =RGBA(0, 75, 141, 1)
         Height: =40
         Icon: =Icon.Edit
