@@ -59,10 +59,79 @@
         DataSource: ='Form Response Collection'
         Fill: =RGBA(237, 237, 237, 1)
         Height: =486
+        Item: =Gallery1.Selected
         Width: =1213
         X: =25
         Y: =241
         ZIndex: =6
+
+        "'User Name_DataCard3' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_5"
+            Default: =ThisItem.'User Name'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_5")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_5")
+            Required: =false
+            Update: =DataCardValue15.Text
+            Width: =404
+            X: =1
+            Y: =26
+            ZIndex: =1
+
+            DataCardKey10 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue15 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey10.Y + DataCardKey10.Height + 5
+                ZIndex: =2
+
+            ErrorMessage10 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue15.Y + DataCardValue15.Height
+                ZIndex: =3
+
+            StarVisible10 As label:
+                Align: =Align.Center
+                Height: =DataCardKey10.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey10.Y
+                ZIndex: =4
 
         "'Please select the Organization Code below_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -76,7 +145,7 @@
             Required: =false
             Update: =DataCardValue47.Text
             Visible: =varTabSelected=1
-            Width: =404
+            Width: =808
             X: =0
             Y: =0
             ZIndex: =7
@@ -84,7 +153,7 @@
             DataCardKey51 As label:
                 AutoHeight: =true
                 Height: =34
-                Text: ="Org Code"
+                Text: ="Org"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -103,9 +172,9 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey51.Y + DataCardKey51.Height + 5
+                Width: =200
+                X: =163
+                Y: =10
                 ZIndex: =2
 
             ErrorMessage51 As label:
@@ -146,9 +215,9 @@
             Required: =false
             Update: =DataCardValue49.Text
             Visible: =varTabSelected=3
-            Width: =404
-            X: =1
-            Y: =0
+            Width: =808
+            X: =0
+            Y: =1
             ZIndex: =7
 
             DataCardKey53 As label:
@@ -203,76 +272,6 @@
                 Y: =DataCardKey53.Y
                 ZIndex: =4
 
-        "'Customer PO #_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_8"
-            Default: |-
-                =ThisItem.'Customer PO #'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_8")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_8")
-            Required: =false
-            Update: =DataCardValue50.Text
-            Visible: =varTabSelected=3
-            Width: =404
-            X: =2
-            Y: =0
-            ZIndex: =7
-
-            DataCardKey54 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue50 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey54.Y + DataCardKey54.Height + 5
-                ZIndex: =2
-
-            ErrorMessage54 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue50.Y + DataCardValue50.Height
-                ZIndex: =3
-
-            StarVisible54 As label:
-                Align: =Align.Center
-                Height: =DataCardKey54.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey54.Y
-                ZIndex: =4
-
         "'Oracle Line #_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_9"
@@ -286,9 +285,9 @@
             Required: =false
             Update: =DataCardValue51.Text
             Visible: =varTabSelected=1
-            Width: =404
+            Width: =808
             X: =0
-            Y: =1
+            Y: =3
             ZIndex: =7
 
             DataCardKey80 As label:
@@ -313,9 +312,9 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey80.Y + DataCardKey80.Height + 5
+                Width: =200
+                X: =163
+                Y: =4
                 ZIndex: =2
 
             ErrorMessage80 As label:
@@ -343,491 +342,6 @@
                 Y: =DataCardKey80.Y
                 ZIndex: =4
 
-        "'Item Description_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_10"
-            Default: =ThisItem.'Item Description'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_10")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_10")
-            Required: =false
-            Update: =DataCardValue52.Text
-            Width: =404
-            X: =1
-            Y: =1
-            ZIndex: =7
-
-            DataCardKey81 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue52 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey81.Y + DataCardKey81.Height + 5
-                ZIndex: =2
-
-            ErrorMessage81 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue52.Y + DataCardValue52.Height
-                ZIndex: =3
-
-            StarVisible81 As label:
-                Align: =Align.Center
-                Height: =DataCardKey81.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey81.Y
-                ZIndex: =4
-
-        "'Bill To Customer #_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_12"
-            Default: |-
-                =ThisItem.'Bill To Customer #'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_12")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_12")
-            Required: =false
-            Update: =DataCardValue79.Text
-            Visible: =varTabSelected=2
-            Width: =404
-            X: =0
-            Y: =2
-            ZIndex: =7
-
-            DataCardKey83 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue79 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey83.Y + DataCardKey83.Height + 5
-                ZIndex: =2
-
-            ErrorMessage83 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue79.Y + DataCardValue79.Height
-                ZIndex: =3
-
-            StarVisible83 As label:
-                Align: =Align.Center
-                Height: =DataCardKey83.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey83.Y
-                ZIndex: =4
-
-        "'Ship To Customer #_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_13"
-            Default: |-
-                =ThisItem.'Ship To Customer #'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_13")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_13")
-            Required: =false
-            Update: =DataCardValue80.Text
-            Visible: =varTabSelected=2
-            Width: =404
-            X: =1
-            Y: =2
-            ZIndex: =7
-
-            DataCardKey84 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue80 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey84.Y + DataCardKey84.Height + 5
-                ZIndex: =2
-
-            ErrorMessage84 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue80.Y + DataCardValue80.Height
-                ZIndex: =3
-
-            StarVisible84 As label:
-                Align: =Align.Center
-                Height: =DataCardKey84.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey84.Y
-                ZIndex: =4
-
-        "'Product # (A)_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_15"
-            Default: |-
-                =ThisItem.'Product # (A)'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_15")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_15")
-            Required: =false
-            Update: =DataCardValue82.Text
-            Visible: =varTabSelected=5
-            Width: =404
-            X: =0
-            Y: =3
-            ZIndex: =7
-
-            DataCardKey86 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue82 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey86.Y + DataCardKey86.Height + 5
-                ZIndex: =2
-
-            ErrorMessage86 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue82.Y + DataCardValue82.Height
-                ZIndex: =3
-
-            StarVisible86 As label:
-                Align: =Align.Center
-                Height: =DataCardKey86.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey86.Y
-                ZIndex: =4
-
-        "'EM String(s) for Product (A)_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_16"
-            Default: =ThisItem.'EM String(s) for Product (A)'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_16")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_16")
-            Required: =false
-            Update: =DataCardValue83.Text
-            Visible: =varTabSelected=5
-            Width: =404
-            X: =1
-            Y: =3
-            ZIndex: =7
-
-            DataCardKey87 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue83 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey87.Y + DataCardKey87.Height + 5
-                ZIndex: =2
-
-            ErrorMessage87 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue83.Y + DataCardValue83.Height
-                ZIndex: =3
-
-            StarVisible87 As label:
-                Align: =Align.Center
-                Height: =DataCardKey87.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey87.Y
-                ZIndex: =4
-
-        "'Sales Person Name_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_11"
-            Default: =ThisItem.'Sales Person Name'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_11")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_11")
-            Required: =false
-            Update: =DataCardValue78.Text
-            Visible: =varTabSelected=3
-            Width: =404
-            X: =2
-            Y: =1
-            ZIndex: =7
-
-            DataCardKey82 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue78 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey82.Y + DataCardKey82.Height + 5
-                ZIndex: =2
-
-            ErrorMessage82 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue78.Y + DataCardValue78.Height
-                ZIndex: =3
-
-            StarVisible82 As label:
-                Align: =Align.Center
-                Height: =DataCardKey82.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey82.Y
-                ZIndex: =4
-
-        "'Service Request #_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_14"
-            Default: |-
-                =ThisItem.'Service Request #'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_14")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_14")
-            Required: =false
-            Update: =DataCardValue81.Text
-            Width: =404
-            X: =2
-            Y: =2
-            ZIndex: =7
-
-            DataCardKey85 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue81 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey85.Y + DataCardKey85.Height + 5
-                ZIndex: =2
-
-            ErrorMessage85 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue81.Y + DataCardValue81.Height
-                ZIndex: =3
-
-            StarVisible85 As label:
-                Align: =Align.Center
-                Height: =DataCardKey85.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey85.Y
-                ZIndex: =4
-
         "'Product (B) Y/N_DataCard2' As typedDataCard.comboBoxEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_17"
@@ -840,8 +354,8 @@
             Update: =DataCardValue84.Selected
             Visible: =false
             Width: =404
-            X: =2
-            Y: =3
+            X: =0
+            Y: =7
             ZIndex: =7
 
             DataCardKey88 As label:
@@ -909,8 +423,8 @@
             Update: =DataCardValue85.Text
             Visible: =varTabSelected=5
             Width: =404
-            X: =0
-            Y: =4
+            X: =1
+            Y: =7
             ZIndex: =7
 
             DataCardKey89 As label:
@@ -978,8 +492,8 @@
             Update: =DataCardValue86.Text
             Visible: =varTabSelected=5
             Width: =404
-            X: =1
-            Y: =4
+            X: =2
+            Y: =7
             ZIndex: =7
 
             DataCardKey90 As label:
@@ -1046,8 +560,8 @@
             Update: =DataCardValue87.Selected
             Visible: =false
             Width: =404
-            X: =2
-            Y: =4
+            X: =0
+            Y: =8
             ZIndex: =7
 
             DataCardKey91 As label:
@@ -1115,8 +629,8 @@
             Update: =DataCardValue88.Text
             Visible: =varTabSelected=5
             Width: =404
-            X: =0
-            Y: =5
+            X: =1
+            Y: =8
             ZIndex: =7
 
             DataCardKey92 As label:
@@ -1184,8 +698,8 @@
             Update: =DataCardValue89.Text
             Visible: =varTabSelected=5
             Width: =404
-            X: =1
-            Y: =5
+            X: =2
+            Y: =8
             ZIndex: =7
 
             DataCardKey93 As label:
@@ -1252,8 +766,8 @@
             Update: =DataCardValue90.Selected
             Visible: =false
             Width: =404
-            X: =2
-            Y: =5
+            X: =0
+            Y: =9
             ZIndex: =7
 
             DataCardKey94 As label:
@@ -1321,8 +835,8 @@
             Update: =DataCardValue91.Text
             Visible: =varTabSelected=5
             Width: =404
-            X: =0
-            Y: =6
+            X: =1
+            Y: =9
             ZIndex: =7
 
             DataCardKey95 As label:
@@ -1390,8 +904,8 @@
             Update: =DataCardValue92.Text
             Visible: =varTabSelected=5
             Width: =404
-            X: =1
-            Y: =6
+            X: =2
+            Y: =9
             ZIndex: =7
 
             DataCardKey96 As label:
@@ -1458,8 +972,8 @@
             Update: =DataCardValue93.Selected
             Visible: =false
             Width: =404
-            X: =2
-            Y: =6
+            X: =0
+            Y: =10
             ZIndex: =7
 
             DataCardKey97 As label:
@@ -1527,8 +1041,8 @@
             Update: =DataCardValue94.Text
             Visible: =varTabSelected=5
             Width: =404
-            X: =0
-            Y: =7
+            X: =1
+            Y: =10
             ZIndex: =7
 
             DataCardKey98 As label:
@@ -1596,8 +1110,8 @@
             Update: =DataCardValue95.Text
             Visible: =varTabSelected=5
             Width: =404
-            X: =1
-            Y: =7
+            X: =2
+            Y: =10
             ZIndex: =7
 
             DataCardKey99 As label:
@@ -1664,8 +1178,8 @@
             Update: =DataCardValue96.Selected
             Visible: =false
             Width: =404
-            X: =2
-            Y: =7
+            X: =0
+            Y: =11
             ZIndex: =7
 
             DataCardKey100 As label:
@@ -1733,8 +1247,8 @@
             Update: =DataCardValue97.Text
             Visible: =varTabSelected=5
             Width: =404
-            X: =0
-            Y: =8
+            X: =1
+            Y: =11
             ZIndex: =7
 
             DataCardKey101 As label:
@@ -1802,8 +1316,8 @@
             Update: =DataCardValue98.Text
             Visible: =varTabSelected=5
             Width: =404
-            X: =1
-            Y: =8
+            X: =2
+            Y: =11
             ZIndex: =7
 
             DataCardKey102 As label:
@@ -1870,8 +1384,8 @@
             Update: =DataCardValue99.Selected
             Visible: =false
             Width: =404
-            X: =2
-            Y: =8
+            X: =0
+            Y: =12
             ZIndex: =7
 
             DataCardKey103 As label:
@@ -1939,8 +1453,8 @@
             Update: =DataCardValue100.Text
             Visible: =varTabSelected=5
             Width: =404
-            X: =0
-            Y: =9
+            X: =1
+            Y: =12
             ZIndex: =7
 
             DataCardKey104 As label:
@@ -2008,8 +1522,8 @@
             Update: =DataCardValue101.Text
             Visible: =varTabSelected=5
             Width: =404
-            X: =1
-            Y: =9
+            X: =2
+            Y: =12
             ZIndex: =7
 
             DataCardKey105 As label:
@@ -2076,8 +1590,8 @@
             Update: =DataCardValue102.Selected
             Visible: =false
             Width: =404
-            X: =2
-            Y: =9
+            X: =0
+            Y: =13
             ZIndex: =7
 
             DataCardKey106 As label:
@@ -2145,8 +1659,8 @@
             Update: =DataCardValue103.Text
             Visible: =varTabSelected=5
             Width: =404
-            X: =0
-            Y: =10
+            X: =1
+            Y: =13
             ZIndex: =7
 
             DataCardKey107 As label:
@@ -2214,8 +1728,8 @@
             Update: =DataCardValue104.Text
             Visible: =varTabSelected=5
             Width: =404
-            X: =1
-            Y: =10
+            X: =2
+            Y: =13
             ZIndex: =7
 
             DataCardKey108 As label:
@@ -2282,8 +1796,8 @@
             Update: =DataCardValue105.Selected
             Visible: =false
             Width: =404
-            X: =2
-            Y: =10
+            X: =0
+            Y: =14
             ZIndex: =7
 
             DataCardKey109 As label:
@@ -2351,8 +1865,8 @@
             Update: =DataCardValue106.Text
             Visible: =varTabSelected=5
             Width: =404
-            X: =0
-            Y: =11
+            X: =1
+            Y: =14
             ZIndex: =7
 
             DataCardKey110 As label:
@@ -2420,8 +1934,8 @@
             Update: =DataCardValue107.Text
             Visible: =varTabSelected=5
             Width: =404
-            X: =1
-            Y: =11
+            X: =2
+            Y: =14
             ZIndex: =7
 
             DataCardKey111 As label:
@@ -2488,8 +2002,8 @@
             Update: =DataCardValue108.Selected
             Visible: =false
             Width: =404
-            X: =2
-            Y: =11
+            X: =0
+            Y: =15
             ZIndex: =7
 
             DataCardKey112 As label:
@@ -2557,8 +2071,8 @@
             Update: =DataCardValue109.Text
             Visible: =varTabSelected=5
             Width: =404
-            X: =0
-            Y: =12
+            X: =1
+            Y: =15
             ZIndex: =7
 
             DataCardKey113 As label:
@@ -2626,8 +2140,8 @@
             Update: =DataCardValue110.Text
             Visible: =varTabSelected=5
             Width: =404
-            X: =1
-            Y: =12
+            X: =2
+            Y: =15
             ZIndex: =7
 
             DataCardKey114 As label:
@@ -2682,417 +2196,6 @@
                 Y: =DataCardKey114.Y
                 ZIndex: =4
 
-        "'Please add configured Item Number_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_44"
-            Default: =ThisItem.'Please add configured Item Number'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_44")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_44")
-            Required: =false
-            Update: =DataCardValue111.Text
-            Width: =404
-            X: =2
-            Y: =12
-            ZIndex: =7
-
-            DataCardKey115 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue111 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey115.Y + DataCardKey115.Height + 5
-                ZIndex: =2
-
-            ErrorMessage115 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue111.Y + DataCardValue111.Height
-                ZIndex: =3
-
-            StarVisible115 As label:
-                Align: =Align.Center
-                Height: =DataCardKey115.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey115.Y
-                ZIndex: =4
-
-        "'Serial #_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Title"
-            Default: |-
-                =ThisItem.'Serial #'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"Title")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "Title")
-            Required: =false
-            Update: =DataCardValue112.Text
-            Width: =404
-            X: =0
-            Y: =13
-            ZIndex: =7
-
-            DataCardKey116 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue112 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey116.Y + DataCardKey116.Height + 5
-                ZIndex: =2
-
-            ErrorMessage116 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue112.Y + DataCardValue112.Height
-                ZIndex: =3
-
-            StarVisible116 As label:
-                Align: =Align.Center
-                Height: =DataCardKey116.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey116.Y
-                ZIndex: =4
-
-        "'Is this a range of Serial Numbers?_DataCard2' As typedDataCard.comboBoxEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_46"
-            Default: =ThisItem.'Is this a range of Serial Numbers?'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_46")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue113.Selected
-            Width: =404
-            X: =1
-            Y: =13
-            ZIndex: =7
-
-            DataCardKey117 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue113 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Form Response Collection'].field_46)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Form Response Collection'.field_46,DataCardValue113.SearchText)
-                SelectMultiple: =false
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey117.Y + DataCardKey117.Height + 5
-                ZIndex: =2
-
-            ErrorMessage117 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue113.Y + DataCardValue113.Height
-                ZIndex: =3
-
-            StarVisible117 As label:
-                Align: =Align.Center
-                Height: =DataCardKey117.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey117.Y
-                ZIndex: =4
-
-        "'End Serial #_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_47"
-            Default: |-
-                =ThisItem.'End Serial #'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_47")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_47")
-            Required: =false
-            Update: =DataCardValue114.Text
-            Width: =404
-            X: =2
-            Y: =13
-            ZIndex: =7
-
-            DataCardKey118 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue114 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey118.Y + DataCardKey118.Height + 5
-                ZIndex: =2
-
-            ErrorMessage118 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue114.Y + DataCardValue114.Height
-                ZIndex: =3
-
-            StarVisible118 As label:
-                Align: =Align.Center
-                Height: =DataCardKey118.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey118.Y
-                ZIndex: =4
-
-        "'Repair #_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_48"
-            Default: |-
-                =ThisItem.'Repair #'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_48")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_48")
-            Required: =false
-            Update: =DataCardValue115.Text
-            Width: =404
-            X: =0
-            Y: =14
-            ZIndex: =7
-
-            DataCardKey119 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue115 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey119.Y + DataCardKey119.Height + 5
-                ZIndex: =2
-
-            ErrorMessage119 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue115.Y + DataCardValue115.Height
-                ZIndex: =3
-
-            StarVisible119 As label:
-                Align: =Align.Center
-                Height: =DataCardKey119.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey119.Y
-                ZIndex: =4
-
-        "'Order #_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_49"
-            Default: |-
-                =ThisItem.'Order #'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_49")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_49")
-            Required: =false
-            Update: =DataCardValue116.Text
-            Visible: =varTabSelected=1
-            Width: =404
-            X: =1
-            Y: =14
-            ZIndex: =7
-
-            DataCardKey120 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue116 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey120.Y + DataCardKey120.Height + 5
-                ZIndex: =2
-
-            ErrorMessage120 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue116.Y + DataCardValue116.Height
-                ZIndex: =3
-
-            StarVisible120 As label:
-                Align: =Align.Center
-                Height: =DataCardKey120.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey120.Y
-                ZIndex: =4
-
         "'Order Qty_DataCard2' As typedDataCard.numberEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_50"
@@ -3104,15 +2207,15 @@
             Required: =false
             Update: =Value(DataCardValue117.Text)
             Visible: =varTabSelected=1
-            Width: =404
-            X: =2
-            Y: =14
+            Width: =808
+            X: =0
+            Y: =16
             ZIndex: =7
 
             DataCardKey121 As label:
                 AutoHeight: =true
                 Height: =34
-                Text: =Parent.DisplayName
+                Text: ="Qty"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -3131,9 +2234,9 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey121.Y + DataCardKey121.Height + 5
+                Width: =200
+                X: =163
+                Y: =7
                 ZIndex: =2
 
             ErrorMessage121 As label:
@@ -3161,75 +2264,6 @@
                 Y: =DataCardKey121.Y
                 ZIndex: =4
 
-        "'CSD #_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_51"
-            Default: |-
-                =ThisItem.'CSD #'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_51")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_51")
-            Required: =false
-            Update: =DataCardValue118.Text
-            Width: =404
-            X: =0
-            Y: =15
-            ZIndex: =7
-
-            DataCardKey122 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue118 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey122.Y + DataCardKey122.Height + 5
-                ZIndex: =2
-
-            ErrorMessage122 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue118.Y + DataCardValue118.Height
-                ZIndex: =3
-
-            StarVisible122 As label:
-                Align: =Align.Center
-                Height: =DataCardKey122.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey122.Y
-                ZIndex: =4
-
         "'Order Date_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_52"
@@ -3242,9 +2276,9 @@
             Required: =false
             Update: =DataCardValue119.Text
             Visible: =varTabSelected=1
-            Width: =404
-            X: =1
-            Y: =15
+            Width: =808
+            X: =0
+            Y: =17
             ZIndex: =7
 
             DataCardKey123 As label:
@@ -3259,7 +2293,7 @@
 
             DataCardValue119 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: =Text(ThisItem.'Order Date',ShortDate)
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -3269,9 +2303,9 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey123.Y + DataCardKey123.Height + 5
+                Width: =200
+                X: =163
+                Y: =7
                 ZIndex: =2
 
             ErrorMessage123 As label:
@@ -3299,23 +2333,25 @@
                 Y: =DataCardKey123.Y
                 ZIndex: =4
 
-        "'Site Location_DataCard1' As typedDataCard.textualEditCard":
+        "'Customer PO #_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
-            DataField: ="field_53"
-            Default: =ThisItem.'Site Location'
+            DataField: ="field_8"
+            Default: |-
+                =ThisItem.'Customer PO #'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_53")
+            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_8")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_53")
+            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_8")
             Required: =false
-            Update: =DataCardValue120.Text
-            Width: =404
-            X: =2
-            Y: =15
+            Update: =DataCardValue50.Text
+            Visible: =varTabSelected=3
+            Width: =808
+            X: =0
+            Y: =2
             ZIndex: =7
 
-            DataCardKey124 As label:
+            DataCardKey54 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -3325,7 +2361,7 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue120 As text:
+            DataCardValue50 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -3339,10 +2375,10 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey124.Y + DataCardKey124.Height + 5
+                Y: =DataCardKey54.Y + DataCardKey54.Height + 5
                 ZIndex: =2
 
-            ErrorMessage124 As label:
+            ErrorMessage54 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -3354,36 +2390,38 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue120.Y + DataCardValue120.Height
+                Y: =DataCardValue50.Y + DataCardValue50.Height
                 ZIndex: =3
 
-            StarVisible124 As label:
+            StarVisible54 As label:
                 Align: =Align.Center
-                Height: =DataCardKey124.Height
+                Height: =DataCardKey54.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey124.Y
+                Y: =DataCardKey54.Y
                 ZIndex: =4
 
-        "'Form Status_DataCard1' As typedDataCard.textualEditCard":
+        "'Bill To Customer #_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
-            DataField: ="field_54"
-            Default: =ThisItem.'Form Status'
+            DataField: ="field_12"
+            Default: |-
+                =ThisItem.'Bill To Customer #'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_54")
+            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_12")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_54")
+            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_12")
             Required: =false
-            Update: =DataCardValue121.Text
-            Width: =404
+            Update: =DataCardValue79.Text
+            Visible: =varTabSelected=2
+            Width: =808
             X: =0
-            Y: =16
+            Y: =4
             ZIndex: =7
 
-            DataCardKey125 As label:
+            DataCardKey83 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -3393,7 +2431,146 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue121 As text:
+            DataCardValue79 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =200
+                X: =240
+                Y: =4
+                ZIndex: =2
+
+            ErrorMessage83 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue79.Y + DataCardValue79.Height
+                ZIndex: =3
+
+            StarVisible83 As label:
+                Align: =Align.Center
+                Height: =DataCardKey83.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey83.Y
+                ZIndex: =4
+
+        "'Ship To Customer #_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_13"
+            Default: |-
+                =ThisItem.'Ship To Customer #'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_13")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_13")
+            Required: =false
+            Update: =DataCardValue80.Text
+            Visible: =varTabSelected=2
+            Width: =808
+            X: =0
+            Y: =5
+            ZIndex: =7
+
+            DataCardKey84 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue80 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =200
+                X: =240
+                Y: =7
+                ZIndex: =2
+
+            ErrorMessage84 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue80.Y + DataCardValue80.Height
+                ZIndex: =3
+
+            StarVisible84 As label:
+                Align: =Align.Center
+                Height: =DataCardKey84.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey84.Y
+                ZIndex: =4
+
+        "'EM String(s) for Product (A)_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_16"
+            Default: =ThisItem.'EM String(s) for Product (A)'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_16")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_16")
+            Required: =false
+            Update: =DataCardValue83.Text
+            Visible: =varTabSelected=5
+            Width: =404
+            X: =0
+            Y: =6
+            ZIndex: =7
+
+            DataCardKey87 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue83 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -3407,10 +2584,10 @@
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey125.Y + DataCardKey125.Height + 5
+                Y: =DataCardKey87.Y + DataCardKey87.Height + 5
                 ZIndex: =2
 
-            ErrorMessage125 As label:
+            ErrorMessage87 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -3422,17 +2599,156 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue121.Y + DataCardValue121.Height
+                Y: =DataCardValue83.Y + DataCardValue83.Height
                 ZIndex: =3
 
-            StarVisible125 As label:
+            StarVisible87 As label:
                 Align: =Align.Center
-                Height: =DataCardKey125.Height
+                Height: =DataCardKey87.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey125.Y
+                Y: =DataCardKey87.Y
+                ZIndex: =4
+
+        "'Sales Person Name_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_11"
+            Default: =ThisItem.'Sales Person Name'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_11")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_11")
+            Required: =false
+            Update: =DataCardValue78.Text
+            Visible: =varTabSelected=3
+            Width: =808
+            X: =1
+            Y: =6
+            ZIndex: =7
+
+            DataCardKey82 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue78 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey82.Y + DataCardKey82.Height + 5
+                ZIndex: =2
+
+            ErrorMessage82 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue78.Y + DataCardValue78.Height
+                ZIndex: =3
+
+            StarVisible82 As label:
+                Align: =Align.Center
+                Height: =DataCardKey82.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey82.Y
+                ZIndex: =4
+
+        "'Product # (A)_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_15"
+            Default: |-
+                =ThisItem.'Product # (A)'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_15")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_15")
+            Required: =false
+            Update: =DataCardValue82.Text
+            Visible: =varTabSelected=5
+            Width: =404
+            X: =2
+            Y: =5
+            ZIndex: =7
+
+            DataCardKey86 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue82 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey86.Y + DataCardKey86.Height + 5
+                ZIndex: =2
+
+            ErrorMessage86 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue82.Y + DataCardValue82.Height
+                ZIndex: =3
+
+            StarVisible86 As label:
+                Align: =Align.Center
+                Height: =DataCardKey86.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey86.Y
                 ZIndex: =4
 
         "'Please enter the Current Location Number_DataCard2' As typedDataCard.textualEditCard":
@@ -3447,15 +2763,16 @@
             Required: =false
             Update: =DataCardValue122.Text
             Visible: =varTabSelected=2
-            Width: =404
-            X: =1
-            Y: =16
+            Width: =808
+            X: =0
+            Y: =18
             ZIndex: =7
 
             DataCardKey126 As label:
                 AutoHeight: =true
                 Height: =34
-                Text: =Parent.DisplayName
+                Text: |-
+                    ="Current Location #"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -3464,7 +2781,8 @@
 
             DataCardValue122 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: |-
+                    =If(IsBlank(ThisItem.'Please enter the Current Location Number')=true,ThisItem.'Ship To Customer #',ThisItem.'Please enter the Current Location Number')
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -3474,9 +2792,9 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey126.Y + DataCardKey126.Height + 5
+                Width: =200
+                X: =240
+                Y: =7
                 ZIndex: =2
 
             ErrorMessage126 As label:
@@ -3516,15 +2834,16 @@
             Required: =false
             Update: =DataCardValue123.Text
             Visible: =varTabSelected=2
-            Width: =404
-            X: =2
-            Y: =16
+            Width: =808
+            X: =0
+            Y: =19
             ZIndex: =7
 
             DataCardKey127 As label:
                 AutoHeight: =true
                 Height: =34
-                Text: =Parent.DisplayName
+                Text: |-
+                    ="Installed At Customer #"
                 Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
@@ -3533,7 +2852,8 @@
 
             DataCardValue123 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: |-
+                    =If(IsBlank(ThisItem.'Please enter the Installed At Number')=true,ThisItem.'Ship To Customer #',ThisItem.'Please enter the Installed At Number')
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 MaxLength: =Parent.MaxLength
@@ -3543,9 +2863,9 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey127.Y + DataCardKey127.Height + 5
+                Width: =200
+                X: =240
+                Y: =10
                 ZIndex: =2
 
             ErrorMessage127 As label:
@@ -3573,209 +2893,6 @@
                 Y: =DataCardKey127.Y
                 ZIndex: =4
 
-        "'Ship To Customer Address the same as Current Location and Installed At?_DataCard2' As typedDataCard.comboBoxEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_57"
-            Default: =ThisItem.'Ship To Customer Address the same as Current Location and Installed At?'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_57")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue124.Selected
-            Width: =404
-            X: =0
-            Y: =17
-            ZIndex: =7
-
-            DataCardKey128 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue124 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Form Response Collection'].field_57)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Form Response Collection'.field_57,DataCardValue124.SearchText)
-                SelectMultiple: =false
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey128.Y + DataCardKey128.Height + 5
-                ZIndex: =2
-
-            ErrorMessage128 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue124.Y + DataCardValue124.Height
-                ZIndex: =3
-
-            StarVisible128 As label:
-                Align: =Align.Center
-                Height: =DataCardKey128.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey128.Y
-                ZIndex: =4
-
-        "'Please add the Tag Number_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_58"
-            Default: =ThisItem.'Please add the Tag Number'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_58")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_58")
-            Required: =false
-            Update: =DataCardValue125.Text
-            Width: =404
-            X: =1
-            Y: =17
-            ZIndex: =7
-
-            DataCardKey129 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue125 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey129.Y + DataCardKey129.Height + 5
-                ZIndex: =2
-
-            ErrorMessage129 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue125.Y + DataCardValue125.Height
-                ZIndex: =3
-
-            StarVisible129 As label:
-                Align: =Align.Center
-                Height: =DataCardKey129.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey129.Y
-                ZIndex: =4
-
-        "'Please Enter Special Note Value (A)_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_59"
-            Default: =ThisItem.'Please Enter Special Note Value (A)'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_59")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_59")
-            Required: =false
-            Update: =DataCardValue126.Text
-            Visible: =varTabSelected=5
-            Width: =404
-            X: =2
-            Y: =17
-            ZIndex: =7
-
-            DataCardKey130 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue126 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey130.Y + DataCardKey130.Height + 5
-                ZIndex: =2
-
-            ErrorMessage130 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue126.Y + DataCardValue126.Height
-                ZIndex: =3
-
-            StarVisible130 As label:
-                Align: =Align.Center
-                Height: =DataCardKey130.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey130.Y
-                ZIndex: =4
-
         "'Please Select Note Type (A)_DataCard2' As typedDataCard.comboBoxEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_60"
@@ -3789,7 +2906,7 @@
             Visible: =varTabSelected=5
             Width: =404
             X: =0
-            Y: =18
+            Y: =20
             ZIndex: =7
 
             DataCardKey131 As label:
@@ -3843,140 +2960,6 @@
                 Y: =DataCardKey131.Y
                 ZIndex: =4
 
-        "'Please Select Note Type (I)_DataCard2' As typedDataCard.comboBoxEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_61"
-            Default: =ThisItem.'Please Select Note Type (I)'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_61")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue128.Selected
-            Visible: =varTabSelected=5
-            Width: =404
-            X: =1
-            Y: =18
-            ZIndex: =7
-
-            DataCardKey132 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue128 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Form Response Collection'].field_61)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Form Response Collection'.field_61,DataCardValue128.SearchText)
-                SelectMultiple: =false
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey132.Y + DataCardKey132.Height + 5
-                ZIndex: =2
-
-            ErrorMessage132 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue128.Y + DataCardValue128.Height
-                ZIndex: =3
-
-            StarVisible132 As label:
-                Align: =Align.Center
-                Height: =DataCardKey132.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey132.Y
-                ZIndex: =4
-
-        "'Please Select Note Type (J)_DataCard2' As typedDataCard.comboBoxEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_62"
-            Default: =ThisItem.'Please Select Note Type (J)'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_62")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue129.Selected
-            Visible: =varTabSelected=5
-            Width: =404
-            X: =2
-            Y: =18
-            ZIndex: =7
-
-            DataCardKey133 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue129 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Form Response Collection'].field_62)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Form Response Collection'.field_62,DataCardValue129.SearchText)
-                SelectMultiple: =false
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey133.Y + DataCardKey133.Height + 5
-                ZIndex: =2
-
-            ErrorMessage133 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue129.Y + DataCardValue129.Height
-                ZIndex: =3
-
-            StarVisible133 As label:
-                Align: =Align.Center
-                Height: =DataCardKey133.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey133.Y
-                ZIndex: =4
-
         "'Please Select Note Type (C)_DataCard2' As typedDataCard.comboBoxEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_63"
@@ -3990,7 +2973,7 @@
             Visible: =varTabSelected=5
             Width: =404
             X: =0
-            Y: =19
+            Y: =21
             ZIndex: =7
 
             DataCardKey134 As label:
@@ -4044,140 +3027,6 @@
                 Y: =DataCardKey134.Y
                 ZIndex: =4
 
-        "'Please Select Note Type (B)_DataCard2' As typedDataCard.comboBoxEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_64"
-            Default: =ThisItem.'Please Select Note Type (B)'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_64")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue131.Selected
-            Visible: =varTabSelected=5
-            Width: =404
-            X: =1
-            Y: =19
-            ZIndex: =7
-
-            DataCardKey135 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue131 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Form Response Collection'].field_64)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Form Response Collection'.field_64,DataCardValue131.SearchText)
-                SelectMultiple: =false
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey135.Y + DataCardKey135.Height + 5
-                ZIndex: =2
-
-            ErrorMessage135 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue131.Y + DataCardValue131.Height
-                ZIndex: =3
-
-            StarVisible135 As label:
-                Align: =Align.Center
-                Height: =DataCardKey135.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey135.Y
-                ZIndex: =4
-
-        "'Please Select Note Type (F)_DataCard2' As typedDataCard.comboBoxEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_65"
-            Default: =ThisItem.'Please Select Note Type (F)'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_65")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue132.Selected
-            Visible: =varTabSelected=5
-            Width: =404
-            X: =2
-            Y: =19
-            ZIndex: =7
-
-            DataCardKey136 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue132 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Form Response Collection'].field_65)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Form Response Collection'.field_65,DataCardValue132.SearchText)
-                SelectMultiple: =false
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey136.Y + DataCardKey136.Height + 5
-                ZIndex: =2
-
-            ErrorMessage136 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue132.Y + DataCardValue132.Height
-                ZIndex: =3
-
-            StarVisible136 As label:
-                Align: =Align.Center
-                Height: =DataCardKey136.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey136.Y
-                ZIndex: =4
-
         "'Please Select Note Type (E)_DataCard2' As typedDataCard.comboBoxEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_66"
@@ -4191,7 +3040,7 @@
             Visible: =varTabSelected=5
             Width: =404
             X: =0
-            Y: =20
+            Y: =22
             ZIndex: =7
 
             DataCardKey137 As label:
@@ -4245,140 +3094,6 @@
                 Y: =DataCardKey137.Y
                 ZIndex: =4
 
-        "'Please Select Note Type (G)_DataCard2' As typedDataCard.comboBoxEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_67"
-            Default: =ThisItem.'Please Select Note Type (G)'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_67")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue134.Selected
-            Visible: =varTabSelected=5
-            Width: =404
-            X: =1
-            Y: =20
-            ZIndex: =7
-
-            DataCardKey138 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue134 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Form Response Collection'].field_67)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Form Response Collection'.field_67,DataCardValue134.SearchText)
-                SelectMultiple: =false
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey138.Y + DataCardKey138.Height + 5
-                ZIndex: =2
-
-            ErrorMessage138 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue134.Y + DataCardValue134.Height
-                ZIndex: =3
-
-            StarVisible138 As label:
-                Align: =Align.Center
-                Height: =DataCardKey138.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey138.Y
-                ZIndex: =4
-
-        "'Please Select Note Type (H)_DataCard2' As typedDataCard.comboBoxEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_68"
-            Default: =ThisItem.'Please Select Note Type (H)'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_68")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue135.Selected
-            Visible: =varTabSelected=5
-            Width: =404
-            X: =2
-            Y: =20
-            ZIndex: =7
-
-            DataCardKey139 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue135 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Form Response Collection'].field_68)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Form Response Collection'.field_68,DataCardValue135.SearchText)
-                SelectMultiple: =false
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey139.Y + DataCardKey139.Height + 5
-                ZIndex: =2
-
-            ErrorMessage139 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue135.Y + DataCardValue135.Height
-                ZIndex: =3
-
-            StarVisible139 As label:
-                Align: =Align.Center
-                Height: =DataCardKey139.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey139.Y
-                ZIndex: =4
-
         "'Please Select Note Type (D)_DataCard2' As typedDataCard.comboBoxEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_69"
@@ -4392,7 +3107,7 @@
             Visible: =varTabSelected=5
             Width: =404
             X: =0
-            Y: =21
+            Y: =23
             ZIndex: =7
 
             DataCardKey140 As label:
@@ -4446,144 +3161,6 @@
                 Y: =DataCardKey140.Y
                 ZIndex: =4
 
-        "'Please Enter Special Note Value (B)_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_70"
-            Default: =ThisItem.'Please Enter Special Note Value (B)'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_70")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_70")
-            Required: =false
-            Update: =DataCardValue137.Text
-            Visible: =varTabSelected=5
-            Width: =404
-            X: =1
-            Y: =21
-            ZIndex: =7
-
-            DataCardKey141 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue137 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey141.Y + DataCardKey141.Height + 5
-                ZIndex: =2
-
-            ErrorMessage141 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue137.Y + DataCardValue137.Height
-                ZIndex: =3
-
-            StarVisible141 As label:
-                Align: =Align.Center
-                Height: =DataCardKey141.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey141.Y
-                ZIndex: =4
-
-        "'Please Enter Special Note Value (C)_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_71"
-            Default: =ThisItem.'Please Enter Special Note Value (C)'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_71")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_71")
-            Required: =false
-            Update: =DataCardValue138.Text
-            Visible: =varTabSelected=5
-            Width: =404
-            X: =2
-            Y: =21
-            ZIndex: =7
-
-            DataCardKey142 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue138 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey142.Y + DataCardKey142.Height + 5
-                ZIndex: =2
-
-            ErrorMessage142 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue138.Y + DataCardValue138.Height
-                ZIndex: =3
-
-            StarVisible142 As label:
-                Align: =Align.Center
-                Height: =DataCardKey142.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey142.Y
-                ZIndex: =4
-
         "'Please Enter Special Note Value (D)_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_72"
@@ -4598,7 +3175,7 @@
             Visible: =varTabSelected=5
             Width: =404
             X: =0
-            Y: =22
+            Y: =24
             ZIndex: =7
 
             DataCardKey143 As label:
@@ -4653,144 +3230,6 @@
                 Y: =DataCardKey143.Y
                 ZIndex: =4
 
-        "'Please Enter Special Note Value (E)_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_73"
-            Default: =ThisItem.'Please Enter Special Note Value (E)'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_73")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_73")
-            Required: =false
-            Update: =DataCardValue140.Text
-            Visible: =varTabSelected=5
-            Width: =404
-            X: =1
-            Y: =22
-            ZIndex: =7
-
-            DataCardKey144 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue140 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey144.Y + DataCardKey144.Height + 5
-                ZIndex: =2
-
-            ErrorMessage144 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue140.Y + DataCardValue140.Height
-                ZIndex: =3
-
-            StarVisible144 As label:
-                Align: =Align.Center
-                Height: =DataCardKey144.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey144.Y
-                ZIndex: =4
-
-        "'Please Enter Special Note Value (F)_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_74"
-            Default: =ThisItem.'Please Enter Special Note Value (F)'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_74")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_74")
-            Required: =false
-            Update: =DataCardValue141.Text
-            Visible: =varTabSelected=5
-            Width: =404
-            X: =2
-            Y: =22
-            ZIndex: =7
-
-            DataCardKey145 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue141 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey145.Y + DataCardKey145.Height + 5
-                ZIndex: =2
-
-            ErrorMessage145 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue141.Y + DataCardValue141.Height
-                ZIndex: =3
-
-            StarVisible145 As label:
-                Align: =Align.Center
-                Height: =DataCardKey145.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey145.Y
-                ZIndex: =4
-
         "'Please Enter Special Note Value (G)_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_75"
@@ -4805,7 +3244,7 @@
             Visible: =varTabSelected=5
             Width: =404
             X: =0
-            Y: =23
+            Y: =25
             ZIndex: =7
 
             DataCardKey146 As label:
@@ -4860,144 +3299,6 @@
                 Y: =DataCardKey146.Y
                 ZIndex: =4
 
-        "'Please Enter Special Note Value (H)_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_76"
-            Default: =ThisItem.'Please Enter Special Note Value (H)'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_76")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_76")
-            Required: =false
-            Update: =DataCardValue143.Text
-            Visible: =varTabSelected=5
-            Width: =404
-            X: =1
-            Y: =23
-            ZIndex: =7
-
-            DataCardKey147 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue143 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey147.Y + DataCardKey147.Height + 5
-                ZIndex: =2
-
-            ErrorMessage147 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue143.Y + DataCardValue143.Height
-                ZIndex: =3
-
-            StarVisible147 As label:
-                Align: =Align.Center
-                Height: =DataCardKey147.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey147.Y
-                ZIndex: =4
-
-        "'Please Enter Special Note Value (I)_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="field_77"
-            Default: =ThisItem.'Please Enter Special Note Value (I)'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_77")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_77")
-            Required: =false
-            Update: =DataCardValue144.Text
-            Visible: =varTabSelected=5
-            Width: =404
-            X: =2
-            Y: =23
-            ZIndex: =7
-
-            DataCardKey148 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue144 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey148.Y + DataCardKey148.Height + 5
-                ZIndex: =2
-
-            ErrorMessage148 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue144.Y + DataCardValue144.Height
-                ZIndex: =3
-
-            StarVisible148 As label:
-                Align: =Align.Center
-                Height: =DataCardKey148.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey148.Y
-                ZIndex: =4
-
         "'Please Enter Special Note Value (J)_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_78"
@@ -5012,7 +3313,7 @@
             Visible: =varTabSelected=5
             Width: =404
             X: =0
-            Y: =24
+            Y: =26
             ZIndex: =7
 
             DataCardKey149 As label:
@@ -5067,22 +3368,23 @@
                 Y: =DataCardKey149.Y
                 ZIndex: =4
 
-        Attachments_DataCard2 As typedDataCard.attachmentsEditCard:
+        "'Please Select Note Type (I)_DataCard2' As typedDataCard.comboBoxEditCard":
             BorderStyle: =BorderStyle.Solid
-            DataField: ="{Attachments}"
-            Default: =ThisItem.Attachments
+            DataField: ="field_61"
+            Default: =ThisItem.'Please Select Note Type (I)'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"{Attachments}")
+            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_61")
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue146.Attachments
+            Update: =DataCardValue128.Selected
+            Visible: =varTabSelected=5
             Width: =404
             X: =1
-            Y: =24
+            Y: =20
             ZIndex: =7
 
-            DataCardKey150 As label:
+            DataCardKey132 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
@@ -5092,22 +3394,23 @@
                 Y: =10
                 ZIndex: =1
 
-            DataCardValue146 As attachments:
+            DataCardValue128 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                IsInDataCard: =true
-                Items: =Parent.Default
-                PaddingBottom: =5
+                Items: =Choices([@'Form Response Collection'].field_61)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PaddingRight: =5
-                PaddingTop: =5
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Form Response Collection'.field_61,DataCardValue128.SearchText)
+                SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardKey150.Y + DataCardKey150.Height + 5
+                Y: =DataCardKey132.Y + DataCardKey132.Height + 5
                 ZIndex: =2
 
-            ErrorMessage150 As label:
+            ErrorMessage132 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -5119,17 +3422,835 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue146.Y + DataCardValue146.Height
+                Y: =DataCardValue128.Y + DataCardValue128.Height
                 ZIndex: =3
 
-            StarVisible150 As label:
+            StarVisible132 As label:
                 Align: =Align.Center
-                Height: =DataCardKey150.Height
+                Height: =DataCardKey132.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey150.Y
+                Y: =DataCardKey132.Y
+                ZIndex: =4
+
+        "'Please Select Note Type (B)_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_64"
+            Default: =ThisItem.'Please Select Note Type (B)'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_64")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue131.Selected
+            Visible: =varTabSelected=5
+            Width: =404
+            X: =1
+            Y: =21
+            ZIndex: =7
+
+            DataCardKey135 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue131 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Form Response Collection'].field_64)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Form Response Collection'.field_64,DataCardValue131.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey135.Y + DataCardKey135.Height + 5
+                ZIndex: =2
+
+            ErrorMessage135 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue131.Y + DataCardValue131.Height
+                ZIndex: =3
+
+            StarVisible135 As label:
+                Align: =Align.Center
+                Height: =DataCardKey135.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey135.Y
+                ZIndex: =4
+
+        "'Please Select Note Type (G)_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_67"
+            Default: =ThisItem.'Please Select Note Type (G)'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_67")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue134.Selected
+            Visible: =varTabSelected=5
+            Width: =404
+            X: =1
+            Y: =22
+            ZIndex: =7
+
+            DataCardKey138 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue134 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Form Response Collection'].field_67)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Form Response Collection'.field_67,DataCardValue134.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey138.Y + DataCardKey138.Height + 5
+                ZIndex: =2
+
+            ErrorMessage138 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue134.Y + DataCardValue134.Height
+                ZIndex: =3
+
+            StarVisible138 As label:
+                Align: =Align.Center
+                Height: =DataCardKey138.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey138.Y
+                ZIndex: =4
+
+        "'Please Enter Special Note Value (B)_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_70"
+            Default: =ThisItem.'Please Enter Special Note Value (B)'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_70")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_70")
+            Required: =false
+            Update: =DataCardValue137.Text
+            Visible: =varTabSelected=5
+            Width: =404
+            X: =1
+            Y: =23
+            ZIndex: =7
+
+            DataCardKey141 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue137 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey141.Y + DataCardKey141.Height + 5
+                ZIndex: =2
+
+            ErrorMessage141 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue137.Y + DataCardValue137.Height
+                ZIndex: =3
+
+            StarVisible141 As label:
+                Align: =Align.Center
+                Height: =DataCardKey141.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey141.Y
+                ZIndex: =4
+
+        "'Please Enter Special Note Value (E)_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_73"
+            Default: =ThisItem.'Please Enter Special Note Value (E)'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_73")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_73")
+            Required: =false
+            Update: =DataCardValue140.Text
+            Visible: =varTabSelected=5
+            Width: =404
+            X: =1
+            Y: =24
+            ZIndex: =7
+
+            DataCardKey144 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue140 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey144.Y + DataCardKey144.Height + 5
+                ZIndex: =2
+
+            ErrorMessage144 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue140.Y + DataCardValue140.Height
+                ZIndex: =3
+
+            StarVisible144 As label:
+                Align: =Align.Center
+                Height: =DataCardKey144.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey144.Y
+                ZIndex: =4
+
+        "'Please Enter Special Note Value (H)_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_76"
+            Default: =ThisItem.'Please Enter Special Note Value (H)'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_76")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_76")
+            Required: =false
+            Update: =DataCardValue143.Text
+            Visible: =varTabSelected=5
+            Width: =404
+            X: =1
+            Y: =25
+            ZIndex: =7
+
+            DataCardKey147 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue143 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey147.Y + DataCardKey147.Height + 5
+                ZIndex: =2
+
+            ErrorMessage147 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue143.Y + DataCardValue143.Height
+                ZIndex: =3
+
+            StarVisible147 As label:
+                Align: =Align.Center
+                Height: =DataCardKey147.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey147.Y
+                ZIndex: =4
+
+        "'Please Enter Special Note Value (A)_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_59"
+            Default: =ThisItem.'Please Enter Special Note Value (A)'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_59")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_59")
+            Required: =false
+            Update: =DataCardValue126.Text
+            Visible: =varTabSelected=5
+            Width: =404
+            X: =2
+            Y: =19
+            ZIndex: =7
+
+            DataCardKey130 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue126 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey130.Y + DataCardKey130.Height + 5
+                ZIndex: =2
+
+            ErrorMessage130 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue126.Y + DataCardValue126.Height
+                ZIndex: =3
+
+            StarVisible130 As label:
+                Align: =Align.Center
+                Height: =DataCardKey130.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey130.Y
+                ZIndex: =4
+
+        "'Please Select Note Type (J)_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_62"
+            Default: =ThisItem.'Please Select Note Type (J)'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_62")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue129.Selected
+            Visible: =varTabSelected=5
+            Width: =404
+            X: =2
+            Y: =20
+            ZIndex: =7
+
+            DataCardKey133 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue129 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Form Response Collection'].field_62)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Form Response Collection'.field_62,DataCardValue129.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey133.Y + DataCardKey133.Height + 5
+                ZIndex: =2
+
+            ErrorMessage133 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue129.Y + DataCardValue129.Height
+                ZIndex: =3
+
+            StarVisible133 As label:
+                Align: =Align.Center
+                Height: =DataCardKey133.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey133.Y
+                ZIndex: =4
+
+        "'Please Select Note Type (F)_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_65"
+            Default: =ThisItem.'Please Select Note Type (F)'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_65")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue132.Selected
+            Visible: =varTabSelected=5
+            Width: =404
+            X: =2
+            Y: =21
+            ZIndex: =7
+
+            DataCardKey136 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue132 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Form Response Collection'].field_65)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Form Response Collection'.field_65,DataCardValue132.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey136.Y + DataCardKey136.Height + 5
+                ZIndex: =2
+
+            ErrorMessage136 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue132.Y + DataCardValue132.Height
+                ZIndex: =3
+
+            StarVisible136 As label:
+                Align: =Align.Center
+                Height: =DataCardKey136.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey136.Y
+                ZIndex: =4
+
+        "'Please Select Note Type (H)_DataCard2' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_68"
+            Default: =ThisItem.'Please Select Note Type (H)'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_68")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue135.Selected
+            Visible: =varTabSelected=5
+            Width: =404
+            X: =2
+            Y: =22
+            ZIndex: =7
+
+            DataCardKey139 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue135 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Items: =Choices([@'Form Response Collection'].field_68)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('Form Response Collection'.field_68,DataCardValue135.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey139.Y + DataCardKey139.Height + 5
+                ZIndex: =2
+
+            ErrorMessage139 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue135.Y + DataCardValue135.Height
+                ZIndex: =3
+
+            StarVisible139 As label:
+                Align: =Align.Center
+                Height: =DataCardKey139.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey139.Y
+                ZIndex: =4
+
+        "'Please Enter Special Note Value (C)_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_71"
+            Default: =ThisItem.'Please Enter Special Note Value (C)'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_71")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_71")
+            Required: =false
+            Update: =DataCardValue138.Text
+            Visible: =varTabSelected=5
+            Width: =404
+            X: =2
+            Y: =23
+            ZIndex: =7
+
+            DataCardKey142 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue138 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey142.Y + DataCardKey142.Height + 5
+                ZIndex: =2
+
+            ErrorMessage142 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue138.Y + DataCardValue138.Height
+                ZIndex: =3
+
+            StarVisible142 As label:
+                Align: =Align.Center
+                Height: =DataCardKey142.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey142.Y
+                ZIndex: =4
+
+        "'Please Enter Special Note Value (F)_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_74"
+            Default: =ThisItem.'Please Enter Special Note Value (F)'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_74")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_74")
+            Required: =false
+            Update: =DataCardValue141.Text
+            Visible: =varTabSelected=5
+            Width: =404
+            X: =2
+            Y: =24
+            ZIndex: =7
+
+            DataCardKey145 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue141 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey145.Y + DataCardKey145.Height + 5
+                ZIndex: =2
+
+            ErrorMessage145 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue141.Y + DataCardValue141.Height
+                ZIndex: =3
+
+            StarVisible145 As label:
+                Align: =Align.Center
+                Height: =DataCardKey145.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey145.Y
+                ZIndex: =4
+
+        "'Please Enter Special Note Value (I)_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="field_77"
+            Default: =ThisItem.'Please Enter Special Note Value (I)'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Form Response Collection'],DataSourceInfo.DisplayName,"field_77")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_77")
+            Required: =false
+            Update: =DataCardValue144.Text
+            Visible: =varTabSelected=5
+            Width: =404
+            X: =2
+            Y: =25
+            ZIndex: =7
+
+            DataCardKey148 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue144 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey148.Y + DataCardKey148.Height + 5
+                ZIndex: =2
+
+            ErrorMessage148 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue144.Y + DataCardValue144.Height
+                ZIndex: =3
+
+            StarVisible148 As label:
+                Align: =Align.Center
+                Height: =DataCardKey148.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey148.Y
                 ZIndex: =4
 
     "'Edit Button' As icon.Edit":
