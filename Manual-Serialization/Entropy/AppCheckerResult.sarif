@@ -4395,6 +4395,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'Manual Serialization View'.Form2.'Please add the Tag Number_DataCard2'.DataCardValue52.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Manual Serialization View'.Form2.'Please add the Tag Number_DataCard2'.DataCardValue52.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Manual Serialization View",
+                "type": "'Manual Serialization View'.Form2.'Please add the Tag Number_DataCard2'.DataCardValue52"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'Serial Card Request Screen'"
                 }
               ],
