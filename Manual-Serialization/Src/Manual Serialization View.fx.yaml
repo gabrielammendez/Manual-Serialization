@@ -896,7 +896,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_19")
             Required: =false
             Update: =DataCardValue86.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (B) Y/N'.Value="Yes",true,false)
             Width: =808
             X: =1
             Y: =5
@@ -966,7 +966,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_18")
             Required: =false
             Update: =DataCardValue85.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (B) Y/N'.Value="Yes",true,false)
             Width: =404
             X: =0
             Y: =6
@@ -1168,7 +1168,7 @@
             Height: =50
             Required: =false
             Update: =DataCardValue131.Selected
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (B) Y/N'.Value="Yes",true,false)
             Width: =404
             X: =0
             Y: =7
@@ -1236,7 +1236,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_70")
             Required: =false
             Update: =DataCardValue137.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (B) Y/N'.Value="Yes",true,false)
             Width: =808
             X: =1
             Y: =7
@@ -1305,7 +1305,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_22")
             Required: =false
             Update: =DataCardValue89.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (C) Y/N'.Value="Yes",true,false)
             Width: =808
             X: =0
             Y: =8
@@ -1375,7 +1375,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_21")
             Required: =false
             Update: =DataCardValue88.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (C) Y/N'.Value="Yes",true,false)
             Width: =404
             X: =0
             Y: =9
@@ -1510,7 +1510,7 @@
             Height: =50
             Required: =false
             Update: =DataCardValue130.Selected
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (C) Y/N'.Value="Yes",true,false)
             Width: =404
             X: =0
             Y: =10
@@ -1578,7 +1578,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_71")
             Required: =false
             Update: =DataCardValue138.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (C) Y/N'.Value="Yes",true,false)
             Width: =808
             X: =1
             Y: =10
@@ -1647,7 +1647,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_25")
             Required: =false
             Update: =DataCardValue92.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (D) Y/N'.Value="Yes",true,false)
             Width: =808
             X: =0
             Y: =11
@@ -1717,7 +1717,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_24")
             Required: =false
             Update: =DataCardValue91.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (D) Y/N'.Value="Yes",true,false)
             Width: =404
             X: =0
             Y: =12
@@ -1986,7 +1986,7 @@
             Height: =50
             Required: =false
             Update: =DataCardValue136.Selected
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (D) Y/N'.Value="Yes",true,false)
             Width: =404
             X: =0
             Y: =13
@@ -2054,7 +2054,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_72")
             Required: =false
             Update: =DataCardValue139.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (D) Y/N'.Value="Yes",true,false)
             Width: =808
             X: =1
             Y: =13
@@ -2123,7 +2123,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_28")
             Required: =false
             Update: =DataCardValue95.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (E) Y/N'.Value="Yes",true,false)
             Width: =808
             X: =0
             Y: =15
@@ -2193,7 +2193,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_27")
             Required: =false
             Update: =DataCardValue94.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (E) Y/N'.Value="Yes",true,false)
             Width: =404
             X: =0
             Y: =16
@@ -2261,7 +2261,7 @@
             Height: =50
             Required: =false
             Update: =DataCardValue133.Selected
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (E) Y/N'.Value="Yes",true,false)
             Width: =404
             X: =0
             Y: =17
@@ -2329,7 +2329,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_73")
             Required: =false
             Update: =DataCardValue140.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (E) Y/N'.Value="Yes",true,false)
             Width: =808
             X: =1
             Y: =17
@@ -2398,7 +2398,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_31")
             Required: =false
             Update: =DataCardValue98.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (F) Y/N'.Value="Yes",true,false)
             Width: =808
             X: =0
             Y: =18
@@ -2468,7 +2468,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_30")
             Required: =false
             Update: =DataCardValue97.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (F) Y/N'.Value="Yes",true,false)
             Width: =404
             X: =0
             Y: =19
@@ -2603,7 +2603,7 @@
             Height: =50
             Required: =false
             Update: =DataCardValue132.Selected
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (F) Y/N'.Value="Yes",true,false)
             Width: =404
             X: =0
             Y: =20
@@ -2738,7 +2738,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_74")
             Required: =false
             Update: =DataCardValue141.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (F) Y/N'.Value="Yes",true,false)
             Width: =808
             X: =1
             Y: =20
@@ -2807,7 +2807,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_34")
             Required: =false
             Update: =DataCardValue101.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (G) Y/N'.Value="Yes",true,false)
             Width: =808
             X: =0
             Y: =21
@@ -2877,7 +2877,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_33")
             Required: =false
             Update: =DataCardValue100.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (G) Y/N'.Value="Yes",true,false)
             Width: =404
             X: =0
             Y: =22
@@ -3153,7 +3153,7 @@
             Height: =50
             Required: =false
             Update: =DataCardValue134.Selected
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (G) Y/N'.Value="Yes",true,false)
             Width: =404
             X: =0
             Y: =23
@@ -3221,7 +3221,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_75")
             Required: =false
             Update: =DataCardValue142.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (G) Y/N'.Value="Yes",true,false)
             Width: =808
             X: =1
             Y: =23
@@ -3290,7 +3290,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_37")
             Required: =false
             Update: =DataCardValue104.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (H) Y/N'.Value="Yes",true,false)
             Width: =808
             X: =0
             Y: =24
@@ -3360,7 +3360,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_36")
             Required: =false
             Update: =DataCardValue103.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (H) Y/N'.Value="Yes",true,false)
             Width: =404
             X: =0
             Y: =25
@@ -3638,7 +3638,7 @@
             Height: =50
             Required: =false
             Update: =DataCardValue135.Selected
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (H) Y/N'.Value="Yes",true,false)
             Width: =404
             X: =0
             Y: =26
@@ -3706,7 +3706,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_76")
             Required: =false
             Update: =DataCardValue143.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (H) Y/N'.Value="Yes",true,false)
             Width: =808
             X: =1
             Y: =26
@@ -3775,7 +3775,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_40")
             Required: =false
             Update: =DataCardValue107.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (I) Y/N'.Value="Yes",true,false)
             Width: =808
             X: =0
             Y: =27
@@ -3845,7 +3845,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_39")
             Required: =false
             Update: =DataCardValue106.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (I) Y/N'.Value="Yes",true,false)
             Width: =404
             X: =0
             Y: =28
@@ -3984,7 +3984,7 @@
             Height: =50
             Required: =false
             Update: =DataCardValue128.Selected
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (I) Y/N'.Value="Yes",true,false)
             Width: =404
             X: =0
             Y: =29
@@ -4052,7 +4052,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_77")
             Required: =false
             Update: =DataCardValue144.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (I) Y/N'.Value="Yes",true,false)
             Width: =808
             X: =1
             Y: =29
@@ -4121,7 +4121,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_43")
             Required: =false
             Update: =DataCardValue110.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (J) Y/N'.Value="Yes",true,false)
             Width: =808
             X: =0
             Y: =30
@@ -4191,7 +4191,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_42")
             Required: =false
             Update: =DataCardValue109.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (J) Y/N'.Value="Yes",true,false)
             Width: =404
             X: =0
             Y: =31
@@ -4259,7 +4259,7 @@
             Height: =50
             Required: =false
             Update: =DataCardValue129.Selected
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (J) Y/N'.Value="Yes",true,false)
             Width: =404
             X: =0
             Y: =32
@@ -4327,7 +4327,7 @@
             MaxLength: =DataSourceInfo([@'Form Response Collection'], DataSourceInfo.MaxLength, "field_78")
             Required: =false
             Update: =DataCardValue145.Text
-            Visible: =varTabSelected=5
+            Visible: =varTabSelected=5&&If(ThisItem.'Product (J) Y/N'.Value="Yes",true,false)
             Width: =808
             X: =1
             Y: =32
