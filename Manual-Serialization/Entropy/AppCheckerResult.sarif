@@ -2445,36 +2445,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Manual Serialization View'.'Input Serial #'.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Manual Serialization View'.'Input Serial #'.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Manual Serialization View",
-                "type": "'Manual Serialization View'.'Input Serial #'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Manual Serialization View'.'Manual Serialization View Tabs'.AccessibleLabel"
                 }
               ],
@@ -3345,19 +3315,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Manual Serialization View'.Form2.'EM String(s) for Product (E)_DataCard2'.DataCardValue95.AccessibleLabel"
+                  "fullyQualifiedName": "'Manual Serialization View'.Form2.'Repair #_DataCard2'.DataCardValue12.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Manual Serialization View'.Form2.'EM String(s) for Product (E)_DataCard2'.DataCardValue95.AccessibleLabel",
+                  "fullyQualifiedName": "'Manual Serialization View'.Form2.'Repair #_DataCard2'.DataCardValue12.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Manual Serialization View",
-                "type": "'Manual Serialization View'.Form2.'EM String(s) for Product (E)_DataCard2'.DataCardValue95"
+                "type": "'Manual Serialization View'.Form2.'Repair #_DataCard2'.DataCardValue12"
               }
             }
           ],
@@ -3375,19 +3345,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Manual Serialization View'.Form2.'Repair #_DataCard2'.DataCardValue12.AccessibleLabel"
+                  "fullyQualifiedName": "'Manual Serialization View'.Form2.'EM String(s) for Product (E)_DataCard2'.DataCardValue95.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Manual Serialization View'.Form2.'Repair #_DataCard2'.DataCardValue12.AccessibleLabel",
+                  "fullyQualifiedName": "'Manual Serialization View'.Form2.'EM String(s) for Product (E)_DataCard2'.DataCardValue95.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Manual Serialization View",
-                "type": "'Manual Serialization View'.Form2.'Repair #_DataCard2'.DataCardValue12"
+                "type": "'Manual Serialization View'.Form2.'EM String(s) for Product (E)_DataCard2'.DataCardValue95"
               }
             }
           ],
@@ -4419,6 +4389,156 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Manual Serialization View'.Form2.'Please add configured Item Number_DataCard2'.DataCardValue8.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Manual Serialization View'.Form2.'Please add configured Item Number_DataCard2'.DataCardValue8.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Manual Serialization View",
+                "type": "'Manual Serialization View'.Form2.'Please add configured Item Number_DataCard2'.DataCardValue8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Manual Serialization View'.Form2.'Oracle Line #_DataCard3'.DataCardValue81.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Manual Serialization View'.Form2.'Oracle Line #_DataCard3'.DataCardValue81.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Manual Serialization View",
+                "type": "'Manual Serialization View'.Form2.'Oracle Line #_DataCard3'.DataCardValue81"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Manual Serialization View'.Form2.'Order Qty_DataCard3'.DataCardValue111.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Manual Serialization View'.Form2.'Order Qty_DataCard3'.DataCardValue111.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Manual Serialization View",
+                "type": "'Manual Serialization View'.Form2.'Order Qty_DataCard3'.DataCardValue111"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Manual Serialization View'.Circle1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Manual Serialization View'.Circle1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Manual Serialization View",
+                "type": "'Manual Serialization View'.Circle1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Manual Serialization View'.Circle1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Manual Serialization View'.Circle1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Manual Serialization View",
+                "type": "'Manual Serialization View'.Circle1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
         },
         {
           "locations": [
